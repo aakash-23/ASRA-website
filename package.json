@@ -1,0 +1,25 @@
+{
+  "name": "aasra-global-services-pvt-ltd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "@srexi/purecounterjs": "^1.5.0",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "express": "^4.21.2",
+    "font-awesome": "^4.7.0",
+    "glightbox": "^3.3.1",
+    "imagesloaded": "^5.0.0",
+    "isotope-layout": "^3.0.6",
+    "swiper": "^11.2.2"
+  }
+}

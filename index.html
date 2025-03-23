@@ -1,0 +1,2416 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asra Global Resource Pvt Ltd</title>
+  <meta name="description" content="Asra Global Resource Pvt Ltd is a premier manpower solutions provider offering permanent staffing, contract staffing, and executive search services across industries.">
+  <meta name="keywords" content="manpower solutions, staffing services, recruitment agency, job placement, HR solutions, contract staffing, permanent staffing, executive search">
+
+   <!-- Favicons -->
+   <link href="assets/img/asralogo.png" rel="icon">
+   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  
+   <!-- Fonts -->
+   <link href="https://fonts.googleapis.com" rel="preconnect">
+   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+  <!-- Work Files -->
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" >
+  <link href="node_modules/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" >
+  <link href="node_modules/bootstrap/aos/aos.css" rel="stylesheet" >
+  <link href="node_modules/glightbox/css/glightbox.min.css" rel="stylesheet" >
+  <link href="node_modules/swiper/swiper-bundle.min.css" rel="stylesheet" >
+  <!-- CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    :root {
+      /* Light Theme Variables */
+      --primary-color: #007bff;
+      --secondary-color: #0056b3;
+      --accent-color: #ffffff;
+      --text-color: #2c3e50;
+      --bg-color: #ffffff;
+      --card-bg: #ffffff;
+      --nav-bg: var(--primary-color);
+      --footer-bg: var(--primary-color);
+      --border-color: rgba(0,0,0,0.1);
+      --shadow-color: rgba(0,0,0,0.1);
+      --gradient-primary: linear-gradient(135deg, #007bff, #0056b3);
+      --gradient-accent: linear-gradient(45deg, rgba(0, 123, 255, 0.95), rgba(0, 86, 179, 0.95));
+      --section-bg: #f8f9fa;
+      --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    [data-theme="dark"] {
+      /* Dark Theme Variables */
+      --primary-color: #007bff;
+      --secondary-color: #0056b3;
+      --accent-color: #007bff;
+      --text-color: #ffffff;
+      --bg-color: #1a1a1a;
+      --card-bg: #2a2a2a;
+      --nav-bg: #1a1a1a;
+      --footer-bg: #1a1a1a;
+      --border-color: rgba(255,255,255,0.1);
+      --shadow-color: rgba(0,0,0,0.5);
+      --gradient-primary: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+      --gradient-accent: linear-gradient(45deg, rgba(0, 123, 255, 0.95), rgba(0, 86, 179, 0.95));
+      --section-bg: #2a2a2a;
+      --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Update dark theme specific styles */
+    [data-theme="dark"] .bg-light {
+      background-color: #2a2a2a !important;
+    }
+
+    [data-theme="dark"] .card {
+      background-color: #2a2a2a;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    [data-theme="dark"] .service-card-back {
+      background-color: #2a2a2a;
+      color: #ffffff;
+    }
+
+    [data-theme="dark"] .navbar {
+      background: #1a1a1a;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    [data-theme="dark"] .footer {
+      background: #1a1a1a;
+    }
+
+    [data-theme="dark"] .text-muted {
+      color: rgba(255,255,255,0.7) !important;
+    }
+
+    [data-theme="dark"] .form-control {
+      background-color: #2a2a2a;
+      border-color: rgba(255,255,255,0.1);
+      color: #ffffff;
+    }
+
+    [data-theme="dark"] .form-control:focus {
+      background-color: #2a2a2a;
+      border-color: var(--primary-color);
+      color: #ffffff;
+    }
+
+    [data-theme="dark"] .client-card {
+      background-color: #2a2a2a;
+    }
+
+    [data-theme="dark"] .stat-item {
+      background-color: #2a2a2a;
+    }
+
+    [data-theme="dark"] .feature-list li {
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    [data-theme="dark"] .service-card-front {
+      background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+    }
+
+    [data-theme="dark"] .testimonial-icon {
+      background: var(--primary-color);
+    }
+
+    [data-theme="dark"] .social-icon {
+      background: #2a2a2a;
+      color: #ffffff !important;
+    }
+
+    [data-theme="dark"] .social-icon:hover {
+      background: var(--primary-color);
+    }
+
+    [data-theme="dark"] .footer-contact-form .form-control {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: #ffffff;
+    }
+
+    [data-theme="dark"] .footer-contact-form .form-control::placeholder {
+      color: rgba(255,255,255,0.5);
+    }
+
+    [data-theme="dark"] .progress-bar {
+      background: var(--primary-color);
+    }
+
+    [data-theme="dark"] .back-to-top {
+      background: #2a2a2a;
+      color: #ffffff;
+    }
+
+    [data-theme="dark"] .preloader {
+      background: #1a1a1a;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar {
+      background: var(--nav-bg);
+      transition: background-color 0.3s ease;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      color: var(--text-color);
+      box-shadow: var(--card-shadow);
+      transition: all 0.3s ease;
+    }
+
+    .bg-light {
+      background-color: var(--section-bg) !important;
+    }
+
+    .text-muted {
+      color: var(--text-color) !important;
+      opacity: 0.7;
+    }
+
+    .footer {
+      background: var(--footer-bg);
+    }
+
+    .service-card-front {
+      background: var(--gradient-primary);
+    }
+
+    .service-card-back {
+      background: var(--card-bg);
+      color: var(--text-color);
+    }
+
+    .client-card {
+      background: var(--card-bg);
+    }
+
+    .stat-item {
+      background: var(--card-bg);
+      color: var(--text-color);
+    }
+
+    .stat-number {
+      color: var(--accent-color);
+    }
+
+    /* Update form styles for dark theme */
+    .form-control {
+      background-color: var(--card-bg);
+      border-color: var(--border-color);
+      color: var(--text-color);
+    }
+
+    .form-control:focus {
+      background-color: var(--card-bg);
+      border-color: var(--accent-color);
+      color: var(--text-color);
+    }
+
+    /* Update theme toggle button */
+    .theme-toggle-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-color) !important;
+      transition: transform 0.3s ease;
+    }
+
+    .theme-toggle-btn:hover {
+      transform: rotate(30deg);
+      color: var(--accent-color) !important;
+    }
+
+    /* Update social icons */
+    .social-icon {
+      background: var(--card-bg);
+      color: var(--text-color) !important;
+    }
+
+    .social-icon:hover {
+      background: var(--accent-color);
+      color: #ffffff !important;
+    }
+
+    /* Update testimonial cards */
+    .testimonial-icon {
+      background: var(--accent-color);
+    }
+
+    /* Update contact form in footer */
+    .footer-contact-form .form-control {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--border-color);
+      color: var(--text-color);
+    }
+
+    .footer-contact-form .form-control::placeholder {
+      color: var(--text-color);
+      opacity: 0.7;
+    }
+
+    .btn-primary {
+      background: var(--gradient-primary) !important;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background: var(--gradient-accent) !important;
+      transform: translateY(-2px);
+    }
+
+    .text-primary {
+      color: var(--primary-color) !important;
+    }
+
+    .bg-primary {
+      background: var(--gradient-primary) !important;
+    }
+
+    .service-icon {
+      color: var(--primary-color);
+    }
+
+    .testimonial-icon {
+      background: var(--gradient-primary) !important;
+    }
+
+    .footer-contact-form .btn-primary {
+      background: var(--gradient-primary) !important;
+    }
+
+    .footer-contact-form .btn-primary:hover {
+      background: var(--gradient-accent) !important;
+    }
+
+    .social-icon:hover {
+      background: var(--primary-color);
+    }
+
+    /* Update service card styles */
+    .service-card-front {
+      background: var(--gradient-primary);
+    }
+
+    /* Update progress bar */
+    .progress-bar {
+      background: var(--gradient-primary);
+    }
+
+    /* Update back to top button */
+    .back-to-top {
+      background: var(--gradient-primary);
+    }
+
+    .back-to-top:hover {
+      background: var(--gradient-accent);
+    }
+
+    /* Update links */
+    a {
+      color: var(--primary-color);
+    }
+
+    a:hover {
+      color: var(--secondary-color);
+    }
+
+    /* Update form focus states */
+    .form-control:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    /* Stats section */
+    .stat-number {
+      color: var(--primary-color);
+    }
+
+    /* Industry icons */
+    .industry-icon {
+      color: var(--primary-color);
+    }
+
+    /* Footer links hover */
+    .footer-links a:hover {
+      color: var(--primary-color);
+    }
+
+    /* Newsletter button */
+    .newsletter-btn {
+      background: var(--gradient-primary);
+    }
+
+    .newsletter-btn:hover {
+      background: var(--gradient-accent);
+    }
+
+    /* Call to action overlay */
+    .call-to-action::before {
+      background: linear-gradient(45deg, rgba(0, 123, 255, 0.95), rgba(0, 86, 179, 0.95));
+    }
+
+    /* Client card hover */
+    .client-card:hover {
+      border-color: var(--primary-color);
+    }
+
+    /* Theme Transition */
+    body {
+      transition: background-color 0.3s ease, color 0.3s ease;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      overflow-x: hidden;
+    }
+
+    .navbar {
+      background: var(--gradient-primary);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 1rem 2rem;
+    }
+
+    .navbar-brand {
+      color: white !important;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .nav-link {
+      color: rgba(255,255,255,0.8) !important;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: white !important;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      color: white;
+      padding: 100px 0;
+      overflow: hidden;
+    }
+
+    .hero-video {
+      filter: blur(2px);
+      transform: scale(1.1);
+      object-fit: cover;
+      opacity: 0.8;
+      transition: all 0.3s ease;
+    }
+
+    .hero-overlay {
+      background: linear-gradient(45deg, rgba(0, 153, 255, 0.85), rgba(0, 122, 204, 0.85));
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero h1,
+    .hero p {
+      color: #ffffff !important;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .service-card {
+      perspective: 1000px;
+      height: 400px;
+    }
+
+    .service-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      cursor: pointer;
+    }
+
+    .service-card:hover .service-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .service-card-front,
+    .service-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .service-card-front {
+      background: var(--gradient-primary);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 2rem;
+    }
+
+    .service-card-back {
+      background: white;
+      color: #1f2937;
+      transform: rotateY(180deg);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .icon-wrapper {
+      width: 80px;
+      height: 80px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .feature-list li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .feature-list li:last-child {
+      border-bottom: none;
+    }
+
+    .hover-lift {
+      transition: transform 0.2s;
+    }
+
+    .hover-lift:hover {
+      transform: translateY(-5px);
+    }
+
+    .stats-section {
+      background: var(--gradient-primary);
+      color: white;
+      padding: 80px 0;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 2rem;
+      border-radius: 15px;
+      background: rgba(255,255,255,0.1);
+      transition: var(--transition);
+    }
+
+    .stat-item:hover {
+      transform: translateY(-5px);
+      background: rgba(255,255,255,0.15);
+    }
+
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--accent-color);
+      margin-bottom: 1rem;
+    }
+
+    .industries-section {
+      background-color: var(--light-bg);
+      padding: 80px 0;
+    }
+
+    .industry-icon {
+      font-size: 2.5rem;
+      color: var(--secondary-color);
+      margin-bottom: 1rem;
+    }
+
+    .contact-form {
+      background: var(--card-bg);
+      padding: 3rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px var(--shadow-color);
+    }
+
+    .form-control {
+      padding: 0.8rem;
+      border: 2px solid var(--border-color);
+      border-radius: 8px;
+      transition: var(--transition);
+      background: var(--light-bg);
+      color: var(--text-color);
+    }
+
+    .form-control:focus {
+      border-color: var(--secondary-color);
+      box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+    }
+
+    .btn-custom {
+      padding: 0.8rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      background: var(--gradient-primary);
+      color: white;
+      border: none;
+    }
+
+    .btn-custom::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: rgba(0,0,0,0.1);
+      transition: var(--transition);
+      z-index: -1;
+    }
+
+    .btn-custom:hover::before {
+      width: 100%;
+    }
+
+    .btn-custom:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px var(--shadow-color);
+    }
+
+    .footer {
+      background: var(--gradient-primary);
+      color: #ffffff;
+      padding: 70px 0 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--gradient-accent);
+    }
+
+    .footer-logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      background: var(--gradient-accent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .footer-about {
+      color: #a4b5c6;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .footer h5 {
+      color: #ffffff;
+      font-weight: 600;
+      margin-bottom: 25px;
+      position: relative;
+    }
+
+    .footer h5::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 30px;
+      height: 2px;
+      background: #3498db;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 12px;
+    }
+
+    .footer-links a {
+      color: #a4b5c6;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .footer-links a:hover {
+      color: #3498db;
+      transform: translateX(5px);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .social-icon {
+      width: 35px;
+      height: 35px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .social-icon:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-3px);
+      color: #fff;
+    }
+
+    .footer-newsletter {
+      position: relative;
+      margin-top: 20px;
+    }
+
+    .footer-newsletter input {
+      padding: 12px 15px;
+      border-radius: 25px;
+      border: none;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      outline: none;
+      padding-right: 50px;
+    }
+
+    .footer-newsletter input::placeholder {
+      color: #a4b5c6;
+    }
+
+    .newsletter-btn {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      bottom: 5px;
+      width: 40px;
+      border-radius: 50%;
+      background: var(--gradient-accent);
+      border: none;
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+
+    .newsletter-btn:hover {
+      background: var(--secondary-color);
+    }
+
+    .footer-bottom {
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      color: #a4b5c6;
+    }
+
+    .footer-bottom-links {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .footer-bottom-links a {
+      color: #a4b5c6;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-bottom-links a:hover {
+      color: #3498db;
+    }
+
+    @media (max-width: 768px) {
+      .footer-section {
+        margin-bottom: 40px;
+      }
+    }
+
+    /* Testimonials Section */
+    .testimonial-icon {
+      background: var(--gradient-accent);
+    }
+
+    /* Theme Toggle Button */
+    .theme-toggle {
+      background: var(--gradient-primary);
+      border: none;
+      color: white;
+      box-shadow: 0 2px 10px var(--shadow-color);
+    }
+
+    .theme-toggle:hover {
+      transform: scale(1.1) rotate(10deg);
+      box-shadow: 0 4px 15px var(--shadow-color);
+    }
+
+    /* Progress Bar */
+    .progress-bar {
+      background: var(--gradient-accent);
+    }
+
+    /* Back to Top Button */
+    .back-to-top {
+      background: var(--gradient-primary);
+      color: white;
+      box-shadow: 0 2px 10px var(--shadow-color);
+    }
+
+    .back-to-top:hover {
+      background: var(--gradient-accent);
+    }
+
+    /* Preloader */
+    .preloader {
+      background: var(--bg-color);
+    }
+
+    .loader {
+      border-color: var(--border-color);
+      border-top-color: var(--accent-color);
+    }
+
+    /* Navbar Styles */
+    .gradient-custom {
+        /* fallback for old browsers */
+        background: #c471f5;
+
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to right, rgba(196, 113, 245, 1), rgba(250, 113, 205, 1));
+
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right, rgba(196, 113, 245, 1), rgba(250, 113, 205, 1));
+    }
+
+    .btn {
+        padding: .45rem 1.5rem .35rem;
+    }
+
+    .btn-outline-light {
+        --mdb-btn-hover-bg: transparent;
+        --mdb-btn-active-bg: transparent;
+    }
+
+    .navbar-nav .nav-link {
+        color: rgba(255,255,255,0.8) !important;
+        transition: color 0.3s ease;
+        padding: 0.5rem 1rem !important;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: white !important;
+    }
+
+    .navbar-nav .nav-link i {
+        font-size: 1.2rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .badge-notification {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(25%, -25%);
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .navbar .form-control {
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.2);
+        color: white;
+    }
+
+    .navbar .form-control::placeholder {
+        color: rgba(255,255,255,0.7);
+    }
+
+    .navbar .form-control:focus {
+        background: rgba(255,255,255,0.15);
+        border-color: rgba(255,255,255,0.3);
+        color: white;
+        box-shadow: none;
+    }
+
+    .navbar .btn-outline-light {
+        border-color: rgba(255,255,255,0.5);
+    }
+
+    .navbar .btn-outline-light:hover {
+        background: rgba(255,255,255,0.1);
+        border-color: white;
+    }
+
+    @media (max-width: 991.98px) {
+        .navbar-nav {
+            padding: 1rem 0;
+        }
+        
+        .navbar-nav .nav-item {
+            margin: 0.5rem 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .hero p {
+        font-size: 1.1rem;
+      }
+    }
+
+    .theme-toggle-btn {
+        transition: transform 0.3s ease;
+        color: #ffffff !important;
+    }
+    
+    .theme-toggle-btn:hover {
+        transform: rotate(30deg);
+        color: rgba(255, 255, 255, 0.8) !important;
+    }
+
+    .navbar-brand img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+
+    @media (max-width: 991.98px) {
+        .theme-toggle-btn {
+            margin-right: 10px;
+        }
+    }
+
+    .hero-content h1,
+    .hero-content p {
+      color: #ffffff !important;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .hero-overlay {
+      background: var(--gradient-accent);
+    }
+
+    .service-icon {
+      color: var(--icon-color);
+    }
+
+    .footer {
+      background: var(--gradient-primary);
+    }
+
+    .footer h2,
+    .footer p,
+    .footer .lead {
+      color: #ffffff !important;
+    }
+
+    .social-icon {
+      color: #ffffff !important;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .social-icon:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-3px);
+    }
+
+    .navbar {
+      background: var(--gradient-primary);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .theme-toggle-btn {
+      color: #ffffff !important;
+    }
+
+    .theme-toggle-btn:hover {
+      color: rgba(255, 255, 255, 0.8) !important;
+    }
+
+    .contact-info i,
+    .footer-links i {
+      color: #ffffff !important;
+    }
+
+    /* Update service card styles */
+    .service-card-front {
+      background: var(--gradient-primary);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .service-card-front .icon-wrapper {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .service-card-front i {
+      color: #ffffff;
+    }
+
+    /* Update footer contact section */
+    .footer .text-center h2.display-5,
+    .footer .text-center p.lead {
+      color: #ffffff !important;
+    }
+
+    .footer-contact-form .form-control {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+    }
+
+    .footer-contact-form .form-control::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer-contact-form .btn-primary {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      color: #ffffff;
+    }
+
+    .footer-contact-form .btn-primary:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Update social media icons */
+    .social-links a {
+      color: #ffffff !important;
+      opacity: 0.9;
+    }
+
+    .social-links a:hover {
+      opacity: 1;
+      transform: translateY(-3px);
+    }
+
+    /* Call to Action Section */
+    .call-to-action {
+      position: relative;
+      overflow: hidden;
+      padding: 100px 0;
+      color: white;
+      background: url('assets/img/call-to-action bg.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .call-to-action::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+    }
+
+    .call-to-action .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .call-to-action .btn-outline-light:hover {
+      background: rgba(255,255,255,0.2);
+      border-color: white;
+    }
+
+    /* Navbar dropdown styles */
+    .dropdown-menu {
+      background: var(--nav-bg);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .dropdown-item {
+      color: rgba(255,255,255,0.8) !important;
+      transition: all 0.3s ease;
+    }
+
+    .dropdown-item:hover {
+      background: rgba(255,255,255,0.1);
+      color: white !important;
+      transform: translateX(5px);
+    }
+
+    /* Update the section HTML */
+    .about-text {
+        color: #2c3e50;
+    }
+
+    [data-theme="dark"] .about-text {
+        color: #2c3e50 !important;
+    }
+
+    /* Partner Card Animation Styles */
+    .client-card {
+        background: var(--card-bg);
+        border-radius: 10px;
+        padding: 20px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+    }
+
+    .client-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    .client-card img {
+        max-width: 80%;
+        height: auto;
+        filter: grayscale(100%);
+        transition: all 0.5s ease;
+        animation: floatImage 3s ease-in-out infinite;
+    }
+
+    .client-card:hover img {
+        filter: grayscale(0%);
+        transform: scale(1.1);
+    }
+
+    @keyframes floatImage {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    /* Testimonial Card Animation Styles */
+    .testimonial-card {
+        transition: all 0.3s ease;
+        cursor: pointer;
+        background: var(--card-bg);
+        border: none;
+        overflow: hidden;
+    }
+
+    .testimonial-card:hover {
+        transform: translateY(-15px) scale(1.02);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+
+    .testimonial-card .card-body {
+        position: relative;
+        z-index: 1;
+    }
+
+    .testimonial-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, var(--primary-color) 0%, transparent 100%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .testimonial-card:hover::before {
+        opacity: 0.1;
+    }
+
+    .testimonial-icon {
+        transition: all 0.3s ease;
+    }
+
+    .testimonial-card:hover .testimonial-icon {
+        transform: rotate(360deg) scale(1.1);
+    }
+
+    /* Industry Card Hover Animation */
+    .industry-card {
+        transition: all 0.3s ease;
+        background: var(--card-bg);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .industry-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--gradient-primary);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+    }
+
+    .industry-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+
+    .industry-card:hover::before {
+        opacity: 0.1;
+    }
+
+    .industry-card .card-body {
+        position: relative;
+        z-index: 2;
+    }
+
+    .industry-card:hover i {
+        transform: scale(1.1);
+        color: var(--primary-color);
+    }
+
+    .industry-card i {
+        transition: all 0.3s ease;
+    }
+
+    .industry-card:hover h5 {
+        color: var(--primary-color);
+    }
+
+    .industry-card h5 {
+        transition: color 0.3s ease;
+    }
+
+    [data-theme="dark"] .industry-card {
+        background: var(--card-bg);
+    }
+
+    [data-theme="dark"] .industry-card:hover {
+        background: var(--card-bg);
+    }
+
+    /* Update Testimonials Section for Dark Mode */
+    [data-theme="dark"] .testimonial-card {
+        background: var(--card-bg);
+        color: #ffffff;
+    }
+
+    [data-theme="dark"] .testimonial-card .text-muted {
+        color: rgba(255, 255, 255, 0.7) !important;
+    }
+
+    [data-theme="dark"] .testimonial-card h5 {
+        color: #ffffff;
+    }
+
+    [data-theme="dark"] .testimonial-card p {
+        color: #ffffff;
+    }
+
+    [data-theme="dark"] .testimonial-card .small {
+        color: rgba(255, 255, 255, 0.7) !important;
+    }
+
+    /* Update Industries Section for Dark Mode */
+    [data-theme="dark"] .industries-section {
+        background-color: var(--section-bg);
+    }
+
+    [data-theme="dark"] .industry-card {
+        background: var(--card-bg);
+        color: #ffffff;
+    }
+
+    [data-theme="dark"] .industry-card h5 {
+        color: #ffffff;
+    }
+
+    [data-theme="dark"] .industry-card .text-muted {
+        color: rgba(255, 255, 255, 0.7) !important;
+    }
+
+    [data-theme="dark"] .industry-card i {
+        color: var(--primary-color);
+    }
+
+    [data-theme="dark"] .industry-card:hover h5 {
+        color: var(--primary-color);
+    }
+
+    [data-theme="dark"] .industry-card:hover .text-muted {
+        color: rgba(255, 255, 255, 0.9) !important;
+    }
+
+    /* Update Industries Section Header for Dark Mode */
+    [data-theme="dark"] .industries-section h2.display-5 {
+        color: var(--primary-color) !important;
+    }
+
+    [data-theme="dark"] .industries-section .lead {
+        color: rgba(255, 255, 255, 0.7) !important;
+    }
+
+    [data-theme="dark"] .industries-section .text-muted {
+        color: rgba(255, 255, 255, 0.7) !important;
+    }
+
+    /* Rating Stars Styles */
+    .rating {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
+    }
+
+    .rating input {
+        display: none;
+    }
+
+    .rating label {
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #ddd;
+        padding: 0 0.2rem;
+        transition: color 0.3s ease;
+    }
+
+    .rating label:hover,
+    .rating label:hover ~ label,
+    .rating input:checked ~ label {
+        color: #ffd700;
+    }
+
+    .rating p {
+        margin: 0;
+        color: var(--text-color);
+        font-size: 0.9rem;
+    }
+
+    [data-theme="dark"] .rating p {
+        color: #ffffff;
+    }
+    </style>
+    <!-- Add EmailJS SDK before closing body tag -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("QhyqWNN0z91B9w2Nb"); // Public key is correctly set
+        })();
+    </script>
+</head>
+
+<body class="index-page">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/asralogo.png" alt="Asra Logo" class="rounded-circle" style="width: 40px; height: 40px; object-fit: cover;">
+                <span>Asra</span>
+            </a>
+            <div class="d-flex align-items-center order-lg-last ms-auto">
+                <button class="theme-toggle-btn bg-transparent border-0 text-white ms-2 p-0" id="themeToggle" title="Toggle theme">
+                    <i class="fas fa-sun fs-5"></i>
+                </button>
+                <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" title="Toggle navigation menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+          </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#staffing">Staffing Solutions</a></li>
+                            <li><a class="dropdown-item" href="#payroll">Payroll Services</a></li>
+                            <li><a class="dropdown-item" href="#hr-consulting">HR Consulting</a></li>
+                            <li><a class="dropdown-item" href="#security">Security Services</a></li>
+                            <li><a class="dropdown-item" href="#housekeeping">Housekeeping</a></li>
+                            <li><a class="dropdown-item" href="#delivery">Delivery Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footerContactForm">Contact</a>
+                    </li>
+                </ul>
+           </div>
+            </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="assets/img/herobg3.mp4" type="video/mp4">
+            <img src="assets/img/hero-bg.jpg" alt="Hero Background" class="hero-video">
+          </video>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="display-4 fw-bold mb-4">Empowering Businesses<br>Enriching Solutions</h1>
+                <p class="lead mb-4">Asra Global Resource Pvt Ltd specializes in providing tailored staffing,<br>payroll, and HR consulting solutions.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="#footerContactForm" class="btn btn-custom btn-lg btn-primary">Get Started</a>
+                    <a href="#services" class="btn btn-custom btn-lg btn-outline-light">Our Services</a>
+      </div>
+            </div>
+          </div>
+        </section>
+        
+    <main class="main">
+        
+
+ <section id="about" class="about section py-5">
+      <div class="container">
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+            <h2 class="display-5 fw-bold">About Us</h2>
+            <p class="lead about-text">Asra Global Resource Private Limited is committed to fulfilling all staffing needs with precision and timeliness.
+                Our team goes beyond recruitment to ensure our clients have the right people to drive business success.
+                Our expertise in payroll processing ensures accuracy, compliance, and satisfaction at every stage.
+                We pride ourselves on our strong client relationships and unwavering dedication to excellence.</p>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <div class="about-content">
+                    <h3 class="h4 mb-4">Our Journey</h3>
+                    <p class="mb-4">Asra Global Resource Pvt Ltd is a leading manpower solutions provider with over 15 years of experience in connecting talented professionals with outstanding organizations. We understand the unique staffing needs of various industries and provide customized solutions to meet those requirements.</p>
+                    
+                    <div class="row g-4 mt-4">
+                        <div class="col-md-6">
+                            <div class="about-feature">
+                                <h5 class="mb-3">Our Mission</h5>
+                                <p>To bridge the gap between talent and opportunity, creating lasting professional relationships that drive success.</p>
+              </div>
+            </div>
+                        <div class="col-md-6">
+                            <div class="about-feature">
+                                <h5 class="mb-3">Our Vision</h5>
+                                <p>To be the most trusted partner in global workforce solutions, known for excellence and innovation.</p>
+              </div>
+            </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <h5 class="mb-3">Why Choose Us?</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Industry Expertise</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Global Network</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Quality Assurance</li>
+                                </ul>
+              </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Quick Turnaround</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Competitive Rates</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>24/7 Support</li>
+                                </ul>
+            </div>
+              </div>
+            </div>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="position-relative">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" class="img-fluid rounded shadow-lg" alt="About Us">
+                    <div class="position-absolute bottom-0 end-0 bg-primary text-white p-4 rounded-top">
+                        <h4 class="mb-2">15+ Years</h4>
+                        <p class="mb-0">of Excellence</p>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+ </section>
+
+ <section id="call-to-action" class="call-to-action">
+    <div class="container">
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-xl-9 text-center text-xl-start">
+                <h3 class="text-white mb-4">Why choose us</h3>
+                <p class="text-white opacity-90">Our innovative hiring solutions ensure faster time-to-hire, access to top talent, and significant cost savings. 
+            We prioritize diversity to build well-rounded teams and drive business growth through strategic hiring decisions. 
+            Additionally, our process optimizes operational costs, boosting your bottom line.</p>
+       </div>
+            <div class="col-xl-3 d-flex align-items-center justify-content-center">
+                <a href="#footerContactForm" class="btn btn-outline-light btn-lg">Contact Us</a>
+       </div>
+     </div>
+   </div>
+ </section>
+
+
+  <!-- Services Section -->
+  <section class="py-5" id="services">
+        <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold mb-3" data-aos="fade-up">Our Services</h2>
+            <p class="lead text-muted" data-aos="fade-up" data-aos-delay="100">Comprehensive staffing solutions tailored to your needs</p>
+      </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="card service-card h-100" data-aos="fade-up">
+                    <div class="card-body text-center p-4">
+                        <div class="service-icon-wrapper mb-4">
+                            <i class="fas fa-users service-icon"></i>
+                        </div>
+                        <h4 class="card-title mb-3">Permanent Staffing</h4>
+                        <p class="card-text">Find the perfect permanent employees for your organization with our comprehensive recruitment solutions. We handle everything from initial screening to final placement.</p>
+                        <ul class="list-unstyled text-start mt-4">
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Thorough Candidate Screening</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Skills Assessment</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Cultural Fit Evaluation</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Long-term Success Focus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card service-card h-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-body text-center p-4">
+                        <div class="service-icon-wrapper mb-4">
+                            <i class="fas fa-clock service-icon"></i>
+                        </div>
+                        <h4 class="card-title mb-3">Contract Staffing</h4>
+                        <p class="card-text">Flexible workforce solutions to meet your temporary and project-based staffing needs. Scale your team up or down based on project requirements.</p>
+                        <ul class="list-unstyled text-start mt-4">
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Quick Deployment</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Flexible Duration</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Skilled Professionals</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Cost-Effective Solutions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card service-card h-100" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-body text-center p-4">
+                        <div class="service-icon-wrapper mb-4">
+                            <i class="fas fa-crown service-icon"></i>
+                        </div>
+                        <h4 class="card-title mb-3">Executive Search</h4>
+                        <p class="card-text">Specialized recruitment services for senior-level and executive positions. We help you find leaders who can drive your organization forward.</p>
+                        <ul class="list-unstyled text-start mt-4">
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Confidential Search</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Industry Expertise</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Leadership Assessment</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Strategic Placement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <section id="services" class="services section">
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Services we offer</h2>
+        <p>At Asra Global Resource Pvt Ltd, we provide a comprehensive suite of HR and staffing solutions tailored to meet the unique needs of your business. Our expertise ensures efficient, reliable, and professional services across various industries.</p>
+                </div>
+
+    <div class="container py-5">
+        <div class="row g-4">
+            <!-- Service Card 1 -->
+            <div class="col-md-4">
+                <div class="service-card hover-lift" id="staffing">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-users fa-2x"></i>
+                </div>
+                            <h3 class="h4 mb-2">Staffing Solutions</h3>
+                            <p class="text-center mb-0">Comprehensive workforce management</p>
+                        </div>
+                        <div class="service-card-back">
+                            <h4 class="mb-3">Our Expertise</h4>
+                            <ul class="feature-list">
+                                <li>Temporary Staffing</li>
+                                <li>Permanent Placement</li>
+                                <li>Contract Staffing</li>
+                                <li>Bulk Hiring</li>
+                                <li>Skill Assessment</li>
+                            </ul>
+                            <!-- <button class="btn btn-primary mt-4">Learn More</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="col-md-4">
+                <div class="service-card hover-lift" id="payroll">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-wallet fa-2x"></i>
+                </div>
+                            <h3 class="h4 mb-2">Payroll Services</h3>
+                            <p class="text-center mb-0">Efficient payroll management</p>
+            </div>
+                        <div class="service-card-back">
+                            <h4 class="mb-3">Payroll Solutions</h4>
+                            <ul class="feature-list">
+                                <li>Salary Processing</li>
+                                <li>Tax Management</li>
+                                <li>Compliance Handling</li>
+                                <li>Benefits Administration</li>
+                                <li>Payroll Reports</li>
+                            </ul>
+                            <!-- <button class="btn btn-primary mt-4">Learn More</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="col-md-4">
+                <div class="service-card hover-lift" id="hr-consulting">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-handshake fa-2x"></i>
+                </div>
+                            <h3 class="h4 mb-2">HR Consulting</h3>
+                            <p class="text-center mb-0">Strategic HR solutions</p>
+            </div>
+                        <div class="service-card-back">
+                            <h4 class="mb-3">Consulting Services</h4>
+                            <ul class="feature-list">
+                                <li>HR Strategy Development</li>
+                                <li>Policy Formulation</li>
+                                <li>Compliance Management</li>
+                                <li>Performance Management</li>
+                                <li>Training & Development</li>
+                            </ul>
+                            <!-- <button class="btn btn-primary mt-4">Learn More</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Card 4 -->
+            <div class="col-md-4">
+                <div class="service-card hover-lift" id="security">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-shield-alt fa-2x"></i>
+              </div>
+                            <h3 class="h4 mb-2">Security Services</h3>
+                            <p class="text-center mb-0">Professional security solutions</p>
+            </div>
+                        <div class="service-card-back">
+                            <h4 class="mb-3">Security Solutions</h4>
+                            <ul class="feature-list">
+                                <li>Security Guards</li>
+                                <li>Event Security</li>
+                                <li>Corporate Security</li>
+                                <li>Access Control</li>
+                                <li>Surveillance Systems</li>
+                            </ul>
+                            <!-- <button class="btn btn-primary mt-4">Learn More</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            <!-- Service Card 5 -->
+            <div class="col-md-4">
+                <div class="service-card hover-lift" id="housekeeping">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-home fa-2x"></i>
+              </div>
+                            <h3 class="h4 mb-2">Housekeeping</h3>
+                            <p class="text-center mb-0" >Professional cleaning services</p>
+            </div>
+                        <div class="service-card-back">
+                            <h4 class="mb-3">Housekeeping Services</h4>
+                            <ul class="feature-list">
+                                <li>Commercial Cleaning</li>
+                                <li>Residential Cleaning</li>
+                                <li>Industrial Cleaning</li>
+                                <li>Specialized Cleaning</li>
+                                <li>Maintenance Services</li>
+                            </ul>
+                            <!-- <button class="btn btn-primary mt-4">Learn More</button> -->
+                        </div>
+                    </div>
+                </div>
+          </div>
+  
+            <!-- Service Card 6 -->
+            <div class="col-md-4">
+                <div class="service-card hover-lift" id="delivery">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-motorcycle fa-2x"></i>
+        </div>
+                            <h3 class="h4 mb-2">Delivery Services</h3>
+                            <p class="text-center mb-0">Efficient delivery solutions</p>
+                        </div>
+                        <div class="service-card-back">
+                            <h4 class="mb-3">Delivery Solutions</h4>
+                            <ul class="feature-list">
+                                <li>Courier Services</li>
+                                <li>Food Delivery</li>
+                                <li>E-commerce Delivery</li>
+                                <li>Express Delivery</li>
+                                <li>Logistics Management</li>
+                            </ul>
+                            <!-- <button class="btn btn-primary mt-4">Learn More</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+ </section>
+
+ 
+
+
+
+       <!-- Partners Section -->
+       <!-- <section id="partners" class="partners-section"> -->
+           <!-- <div class="container">
+               <div class="text-center mb-5">
+                   <h2 class="display-5 fw-bold mb-3" data-aos="fade-up">Our Trusted Partners</h2>
+                   <p class="lead text-muted" data-aos="fade-up" data-aos-delay="100">Collaborating with industry leaders to deliver excellence</p>
+                </div>
+
+               <div class="row g-4">
+                   <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up">
+                       <div class="partner-card">
+                           <img src="assets/img/clients/partner.jpeg" alt="Partner 1" class="img-fluid">
+                </div>
+                </div>
+                   <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                       <div class="partner-card">
+                           <img src="assets/img/clients/partner1.jpeg" alt="Partner 2" class="img-fluid">
+                </div>
+            </div>
+                   <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                       <div class="partner-card">
+                           <img src="assets/img/clients/partner2.jpeg" alt="Partner 3" class="img-fluid">
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                       <div class="partner-card">
+                           <img src="assets/img/clients/partner3.jpeg" alt="Partner 4" class="img-fluid">
+                       </div>
+                   </div>
+          </div>
+  
+               <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+                   <p class="lead mb-4">Want to become our partner?</p>
+                   <a href="#contact" class="btn btn-primary btn-lg">Contact Us</a>
+            </div>
+           </div> -->
+       <!-- </section> -->
+
+     <!-- Clients Section -->
+      <section id="clients" class="clients-section py-5">
+          <div class="container">
+              <div class="text-center mb-5">
+                  <h2 class="display-5 fw-bold mb-3" data-aos="fade-up">Our Trusted Partners</h2>
+                  <p class="lead text-muted" data-aos="fade-up" data-aos-delay="100">Trusted by leading companies across industries</p>
+            </div>
+  
+              <div class="row g-4">
+                  <!-- Client 1 -->
+                  <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up">
+                      <div class="client-card">
+                          <img src="assets/img/clients/partner.jpeg" alt="Client 1" class="img-fluid">
+            </div>
+                  </div>
+                  <!-- Client 2 -->
+                  <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                      <div class="client-card">
+                          <img src="assets/img/clients/partner1.jpeg" alt="Client 2" class="img-fluid">
+                      </div>
+                  </div>
+                  <!-- Client 3 -->
+                  <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                      <div class="client-card">
+                          <img src="assets/img/clients/partner2.jpeg" alt="Client 3" class="img-fluid">
+                      </div>
+                  </div>
+                  <!-- Client 4 -->
+                  <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                      <div class="client-card">
+                          <img src="assets/img/clients/partner3.jpeg" alt="Client 4" class="img-fluid">
+                      </div>
+                  </div>
+                  <!-- Client 5 -->
+                  <!-- <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                      <div class="client-card">
+                          <img src="assets/img/clients/client5.png" alt="Client 5" class="img-fluid">
+                      </div>
+            </div> -->
+                  <!-- Client 6 -->
+                  <!-- <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+                      <div class="client-card">
+                          <img src="assets/img/clients/client6.png" alt="Client 6" class="img-fluid">
+                      </div>
+                  </div> -->
+                  <!-- Client 7 -->
+                  <!-- <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="600">
+                      <div class="client-card">
+                          <img src="assets/img/clients/client7.png" alt="Client 7" class="img-fluid">
+                      </div>
+                  </div> -->
+                  <!-- Client 8 -->
+                  <!-- <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="700">
+                      <div class="client-card">
+                          <img src="assets/img/clients/client8.png" alt="Client 8" class="img-fluid">
+                      </div>
+                  </div> -->
+          </div>
+  
+              <!-- <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="800">
+                  <p class="lead mb-4">Join our growing list of satisfied clients</p>
+                  <a href="#contact" class="btn btn-primary btn-lg">Become a Client</a>
+        </div> -->
+        </div>
+      </section>
+
+    <!-- Stats Section -->
+      <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                    <div class="stat-item" data-aos="fade-up">
+                        <div class="stat-number" data-target="1500">0</div>
+                        <p>Successful Placements</p>
+          </div>
+              </div>
+                <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-number" data-target="500">0</div>
+                        <p>Client Companies</p>
+              </div>
+              </div>
+                <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-number" data-target="15">0</div>
+                        <p>Years Experience</p>
+              </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-number" data-target="25">0</div>
+                        <p>Industry Sectors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- Industries Section -->
+    <section class="py-5 bg-light" id="industries">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3" data-aos="fade-up">Industries We Serve</h2>
+                <p class="lead text-muted" data-aos="fade-up" data-aos-delay="100">Expertise across diverse sectors</p>
+          </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card industry-card h-100 border-0 shadow-sm" data-aos="fade-up">
+                        <div class="card-body text-center">
+                            <i class="fas fa-shopping-cart fa-3x text-primary mb-3"></i>
+                            <h5>E-Commerce</h5>
+                            <p class="small text-muted">Online Retail, Digital Commerce, Marketplaces</p>
+              </div>
+              </div>
+              </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card industry-card h-100 border-0 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-truck fa-3x text-primary mb-3"></i>
+                            <h5>Logistics</h5>
+                            <p class="small text-muted">Supply Chain, Transportation, Warehousing</p>
+              </div>
+          </div>
+        </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card industry-card h-100 border-0 shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-body text-center">
+                            <i class="fas fa-industry fa-3x text-primary mb-3"></i>
+                            <h5>Manufacturing</h5>
+                            <p class="small text-muted">Production, Quality Control, Engineering</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card industry-card h-100 border-0 shadow-sm" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-body text-center">
+                            <i class="fas fa-store fa-3x text-primary mb-3"></i>
+                            <h5>Retail</h5>
+                            <p class="small text-muted">Store Operations, Sales, Customer Service</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card industry-card h-100 border-0 shadow-sm" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card-body text-center">
+                            <i class="fas fa-university fa-3x text-primary mb-3"></i>
+                            <h5>BFSI</h5>
+                            <p class="small text-muted">Banking, Financial Services, Insurance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card industry-card h-100 border-0 shadow-sm" data-aos="fade-up" data-aos-delay="500">
+                        <div class="card-body text-center">
+                            <i class="fas fa-broadcast-tower fa-3x text-primary mb-3"></i>
+                            <h5>Telecom</h5>
+                            <p class="small text-muted">Network Operations, Customer Service, Sales</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Updated Testimonials Section -->
+    <section class="py-5 bg-light" id="testimonials">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3" data-aos="fade-up">Client Success Stories</h2>
+                <p class="lead text-muted" data-aos="fade-up" data-aos-delay="100">Hear from organizations we've helped transform</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="testimonial-icon rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                    <i class="fas fa-industry fa-2x"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h5 class="mb-1">Manufacturing Excellence</h5>
+                                    <p class="small text-muted mb-0">Operations Director, Leading Manufacturing Company</p>
+                                </div>
+                            </div>
+                            <p class="mb-0">"Asra Global Resource Pvt Ltd has transformed our workforce management. Their understanding of our industry-specific needs and ability to provide skilled personnel has significantly improved our operational efficiency."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="testimonial-icon rounded-circle bg-success text-white d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                    <i class="fas fa-building fa-2x"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h5 class="mb-1">Corporate Solutions</h5>
+                                    <p class="small text-muted mb-0">HR Head, Technology Services</p>
+                                </div>
+                            </div>
+                            <p class="mb-0">"Their commitment to quality and excellence is unmatched. The team's expertise in payroll management and HR consulting has helped us streamline our operations."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="testimonial-icon rounded-circle bg-info text-white d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                    <i class="fas fa-users fa-2x"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h5 class="mb-1">Strategic Partnership</h5>
+                                    <p class="small text-muted mb-0">CEO, Retail Chain</p>
+                                </div>
+                            </div>
+                            <p class="mb-0">"Working with Asra Global Resource Pvt Ltd has been a game-changer for our business. Their comprehensive staffing solutions have helped us build a diverse and skilled workforce."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+<!-- Contact Section -->
+    <!-- <section id="contact" class="py-5"> -->
+       
+
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer py-5">
+        <div class="container">
+            <div class="row justify-content-between gy-5">
+                <!-- Company Info - Left Column -->
+      <div class="col-lg-4">
+                    <h5 class="mb-4">Asra Global Resource Pvt Ltd</h5>
+                    <p class="mb-4">Your trusted partner in professional staffing solutions. We connect talented professionals with outstanding organizations.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon me-3" title="Facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="social-icon me-3" title="LinkedIn"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        <a href="#" class="social-icon me-3" title="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+          </div>
+          </div>
+
+                <!-- Contact Info - Middle Column -->
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Contact Info</h5>
+                    <div class="contact-info">
+                        <p class="d-flex align-items-center mb-3">
+                            <i class="fas fa-phone me-3"></i>
+                            <span>+91 9305900395</span>
+                        </p>
+                        <p class="d-flex align-items-center mb-3">
+                            <i class="fas fa-envelope me-3"></i>
+                            <span>info@asraglobalresource.com</span><br>
+                            <!-- <span>archana@asraglobalresource.com</span> -->
+                        </p>
+                        <p class="d-flex align-items-center mb-3">
+                          <i class="fas fa-envelope me-3"></i>
+                          <!-- <span>info@asraglobalresource.com</span><br> -->
+                          <span>archana@asraglobalresource.com</span>
+                      </p>
+                        <p class="d-flex align-items-center mb-3">
+                            <i class="fas fa-map-marker-alt me-3"></i>
+                            <span>E-195 Jawahar Vihar Colony Raebareli, Uttar Pradesh, India 229001</span>
+                        </p>
+          </div>
+      </div>
+
+                <!-- Contact Form - Right Column -->
+                <div class="col-lg-4">
+                    <h5 class="mb-4">Get in Touch</h5>
+                    <form id="footerContactForm" class="footer-contact-form">
+        <div class="mb-3">
+                            <input type="text" name="user_name" class="form-control form-control-lg" placeholder="Your Name" required>
+        </div>
+        <div class="mb-3">
+                            <input type="email" name="user_email" class="form-control form-control-lg" placeholder="Your Email" required>
+        </div>
+        <div class="mb-3">
+                            <p class="mb-2">Rate our services:</p>
+                            <div class="rating">
+                                <input type="radio" id="star5" name="rating" value="5">
+                                <label for="star5"><i class="fas fa-star"></i></label>
+                                <input type="radio" id="star4" name="rating" value="4">
+                                <label for="star4"><i class="fas fa-star"></i></label>
+                                <input type="radio" id="star3" name="rating" value="3">
+                                <label for="star3"><i class="fas fa-star"></i></label>
+                                <input type="radio" id="star2" name="rating" value="2">
+                                <label for="star2"><i class="fas fa-star"></i></label>
+                                <input type="radio" id="star1" name="rating" value="1">
+                                <label for="star1"><i class="fas fa-star"></i></label>
+        </div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="message" class="form-control form-control-lg" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+      </form>
+                </div>
+            </div>
+
+            <hr class="my-5" style="border-color: rgba(255,255,255,0.1);">
+            
+            <!-- Footer Bottom -->
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2024 Asra Global Resource Pvt Ltd. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item me-4"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item me-4"><a href="#">Terms of Service</a></li>
+                        <li class="list-inline-item"><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize AOS
+            AOS.init({
+                duration: 800,
+                once: true
+            });
+
+            // Navbar scroll effect
+            const navbar = document.querySelector('.navbar');
+            if (navbar) {
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY > 50) {
+                        navbar.classList.add('scrolled');
+                    } else {
+                        navbar.classList.remove('scrolled');
+                    }
+                });
+            }
+
+            // Stats counter animation
+            const stats = document.querySelectorAll('.stat-number');
+            if (stats.length > 0) {
+                const observerOptions = {
+                    threshold: 0.5
+                };
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const target = parseInt(entry.target.getAttribute('data-target') || '0');
+                            const duration = 2000;
+                            const increment = target / (duration / 16);
+                            let current = 0;
+
+                            const updateCount = () => {
+                                current += increment;
+                                if (current < target) {
+                                    entry.target.textContent = Math.ceil(current);
+                                    requestAnimationFrame(updateCount);
+            } else {
+                                    entry.target.textContent = target;
+                                }
+                            };
+
+                            requestAnimationFrame(updateCount);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, observerOptions);
+
+                stats.forEach(stat => observer.observe(stat));
+            }
+
+            // Theme Toggle
+            const themeToggle = document.getElementById('themeToggle');
+            const html = document.documentElement;
+            const icon = themeToggle.querySelector('i');
+
+            function setTheme(theme) {
+                html.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+                icon.className = theme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
+                
+                // Update meta theme color
+                document.querySelector('meta[name="theme-color"]')?.setAttribute('content', 
+                    theme === 'dark' ? '#1a1c20' : '#007bff');
+            }
+
+            // Check for saved theme preference or system preference
+            const savedTheme = localStorage.getItem('theme') || 
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            setTheme(savedTheme);
+
+            // Theme toggle click handler
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = html.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                setTheme(newTheme);
+            });
+
+            // Progress Bar
+            const progressBar = document.querySelector('.progress-bar');
+            if (progressBar) {
+                window.addEventListener('scroll', () => {
+                    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                    const scrolled = (winScroll / height) * 100;
+                    progressBar.style.width = scrolled + '%';
+                });
+            }
+
+            // Back to Top
+            const backToTop = document.getElementById('backToTop');
+            if (backToTop) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 300) {
+                        backToTop.classList.add('visible');
+                    } else {
+                        backToTop.classList.remove('visible');
+                    }
+                });
+
+                backToTop.addEventListener('click', () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+
+            // Preloader
+            const preloader = document.getElementById('preloader');
+            if (preloader) {
+                preloader.classList.add('fade-out');
+            setTimeout(() => {
+                    preloader.style.display = 'none';
+                }, 500);
+            }
+
+            // Enhanced Animations
+            const animatedElements = document.querySelectorAll('.service-card, .stat-item, .partner-card');
+            if (animatedElements.length > 0) {
+                animatedElements.forEach(element => {
+                    element.addEventListener('mouseenter', () => {
+                        element.style.transform = 'translateY(-10px) scale(1.02)';
+                    });
+                    element.addEventListener('mouseleave', () => {
+                        element.style.transform = 'translateY(0) scale(1)';
+                    });
+                });
+            }
+
+            // Smooth Scroll with Offset
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        const offset = 100;
+                        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Contact Form
+            const contactForm = document.getElementById('footerContactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    if (!submitBtn) return;
+
+                    const originalText = submitBtn.innerHTML;
+                    submitBtn.disabled = true;
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+                    // Simulate form submission (replace with actual API call)
+                    setTimeout(() => {
+                        // Show success message
+                        const alert = document.createElement('div');
+                        alert.className = 'alert alert-success mt-3';
+                        alert.innerHTML = 'Thank you! Your message has been sent successfully.';
+                        this.appendChild(alert);
+
+                        // Reset form
+                        this.reset();
+
+                        // Remove alert after 3 seconds
+            setTimeout(() => {
+                            if (alert.parentNode === this) {
+                                alert.remove();
+                            }
+            }, 3000);
+
+                        // Reset button
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = originalText;
+                    }, 1500);
+                });
+            }
+
+            // Newsletter Form
+            const newsletterForm = document.querySelector('.newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    if (!submitBtn) return;
+
+                    const originalText = submitBtn.innerHTML;
+                    submitBtn.disabled = true;
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+
+                    // Simulate newsletter subscription
+                    setTimeout(() => {
+                        const alert = document.createElement('div');
+                        alert.className = 'alert alert-success mt-3';
+                        alert.innerHTML = 'Thank you for subscribing!';
+                        this.appendChild(alert);
+
+                        this.reset();
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = originalText;
+
+                        setTimeout(() => {
+                            if (alert.parentNode === this) {
+                                alert.remove();
+                            }
+                        }, 3000);
+                    }, 1500);
+                });
+            }
+        });
+    </script>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar"></div>
+
+    <!-- Back to Top -->
+    <div class="back-to-top" id="backToTop" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+ <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+    <script>
+        // Update the contact form submission handler
+        document.getElementById('footerContactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const submitBtn = this.querySelector('button[type="submit"]');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+            // Get form data to match template variables exactly
+            const formData = {
+                name: this.querySelector('[name="user_name"]').value,
+                message: this.querySelector('[name="message"]').value,
+                time: new Date().toLocaleString(),
+                rating: this.querySelector('input[name="rating"]:checked')?.value || 'Not rated',
+                email: this.querySelector('[name="user_email"]').value
+            };
+
+            // Send email using EmailJS with new service and template IDs
+            emailjs.send('service_636wbbq', 'template_ah0xenn', formData)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    // Show success message
+                    const alert = document.createElement('div');
+                    alert.className = 'alert alert-success mt-3';
+                    alert.innerHTML = 'Thank you! Your message has been sent successfully.';
+                    e.target.appendChild(alert);
+
+                    // Reset form
+                    e.target.reset();
+
+                    // Remove alert after 3 seconds
+                    setTimeout(() => {
+                        alert.remove();
+                    }, 3000);
+                })
+                .catch(function(error) {
+                    console.error('EmailJS Error:', error);
+                    // Show detailed error message
+                    const alert = document.createElement('div');
+                    alert.className = 'alert alert-danger mt-3';
+                    alert.innerHTML = `Sorry, there was an error sending your message: ${error.text}. Please try again or contact us directly at asraresource@gmail.com`;
+                    e.target.appendChild(alert);
+                    setTimeout(() => {
+                        alert.remove();
+                    }, 5000);
+                })
+                .finally(function() {
+                    // Reset button
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Send Message';
+                });
+        });
+    </script>
+</body>
+</html>
+
